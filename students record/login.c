@@ -142,13 +142,22 @@ void login()
       getch();
       system("cls");
 
-      printf("\n1-> Add Student's Information.");
-      printf("\n2-> View Student's Information.");
-      printf("\n3-> Edit Student's Information.");
-      printf("\n4-> Delete Student's Information.");
-      printf("\n5-> Exit System");
-      printf("\nPlease enter your choise:");
+      printf("\n\t\t1-> Add Student's Information.");
+      printf("\n\t\t2-> View Student's Information.");
+      printf("\n\t\t3-> Edit Student's Information.");
+      printf("\n\t\t4-> Delete Student's Information.");
+      printf("\n\t\t5-> Exit System");
+      printf("\n\t\tPlease enter your choise:");
       scanf("%d",&num);
+      switch (num)
+      {
+      case 1:
+        printf("\t\t\nUnder construction");
+        break;
+      
+      default:
+        break;
+      }
 }
 
 int main()
