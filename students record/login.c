@@ -45,7 +45,7 @@ void login()
 
   fp=fopen("user.txt","r");
 
-  int flag,i=1;
+  int flag,i=1,num;
   char uname[25],pword[25],username[25],password[25],code;
 
   fscanf(fp,"%s%s",uname,pword);
@@ -141,6 +141,14 @@ void login()
       printf("\n\n\t\t\t\t\t\tpress any key to continue...");
       getch();
       system("cls");
+
+      printf("\n1-> Add Student's Information.");
+      printf("\n2-> View Student's Information.");
+      printf("\n3-> Edit Student's Information.");
+      printf("\n4-> Delete Student's Information.");
+      printf("\n5-> Exit System");
+      printf("\nPlease enter your choise:");
+      scanf("%d",&num);
 }
 
 int main()
